@@ -18,6 +18,8 @@ while x<5:
         
 print("maximo par:",maxpar,"minimo impar: ",minimpar) 
 #esto es una prueba
+
+25
   
     
         
