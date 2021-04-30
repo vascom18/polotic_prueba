@@ -7,7 +7,7 @@ while x<5:
         if numero>maxpar:
             maxpar=numero
         if x==0:
-            minimpar=
+            minimpar=numero
     else:
         if x==0:
             minimpar=numero
@@ -16,7 +16,9 @@ while x<5:
     
     x+=1
         
-print("maximo par:",maxpar,"minimo impar: ",minimpar)   
+print("maximo par:",maxpar,"minimo impar: ",minimpar) 
+#esto es una prueba
+  
     
         
     
