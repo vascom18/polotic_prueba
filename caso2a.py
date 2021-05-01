@@ -9,5 +9,7 @@ procesador1 = "Ryzen3"
 procesador2 = "Ryzen5"
 procesador3 = "Ryzen7"
 
+#lista de procesadores
+
 # Imprimo un cadena con llaves vacias y al final aplico .format()
 print("Los componentes de la pc 2 son: disco de {}, memoria de {} y procesador {}".format(disco2,memoria2,procesador2))
