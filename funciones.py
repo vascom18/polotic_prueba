@@ -1,14 +1,7 @@
 
 
-numero=int(input("ingrese un numero: "))
-numero_original=numero
-restocero=0
-while numero>=1:
-    if (numero_original%numero)==0:
-        restocero+=1
-    numero-=1 
-  
-if restocero==2:
-    print("el numero es primo")
-else:
-    print("el numero no es primo")
+num = int(input("Num: "))
+num2 = int(input("num2: "))
+for i in range(1, num2):
+	num *=num2
+	print(num)
