@@ -1,25 +1,15 @@
-x=0
-maxpar=0
+numero1= int(input("ingrese un numero: "))
+numero2= int(input("ingrese otro numero: "))
+if numero1>numero2:
+    for i in range(numero1,numero2):
+        if i%2==0:
+            print("numero par :",i)
+        else:
+            print("numero impar:",i)
+else: 
+    print("el numero 2 es menor que numero 1")        
 
-while x<5:
-    numero=int(input("ingrese un numero:"))
-    if (numero%2)==0:
-        if numero>maxpar:
-            maxpar=numero
-        if x==0:
-            minimpar=numero
-    else:
-        if x==0:
-            minimpar=numero
-        if numero<minimpar:
-            minimpar=numero
-    
-    x+=1
-        
-print("maximo par:",maxpar,"minimo impar: ",minimpar) 
-#esto es una prueba
 
-25
   
     
         

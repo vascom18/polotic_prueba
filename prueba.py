@@ -1,20 +1,46 @@
-numero = int(input("Ingrese un número para saber se es primo: "))
+anio= int(input("ingrese año: "))
+"""mes= int(input("ingrese mes: "))
+dia= int(input("ingrese dia: "))"""
 
-if numero > 1:
-    contador = 0
-    i = 2 
-    while i < numero and contador == 0:
-        resto = numero % i
-        print("{} % {} = {}". format(numero,i,resto))
-        if resto == 0:
-            contador += 1
+diafinanio=-1
+semana=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"]
 
-        i +=1
-    if contador == 0:
-        print("El {} es un número primo".format(numero))
+#-------------------funcion bisiesto----------------
+
+def bisiesto(verificar):  
+    if verificar%4==0:
+        if verificar%100==0:
+            if verificar%400==0:
+                return True
+            else:
+                return False
+        else:
+            return True    
+            
     else:
-        print("El {} no es un número primo".format(numero))
+        return False
+    
+for i in range(1950,anio+1):
+    
+    if bisiesto(i)==True:
+        diafinanio+=2
+        
+    else:
+        diafinanio+=1
+             
+ultimodia=diafinanio%7
 
-else:
-    print("El {} no es un número primo".format(numero))
+print(semana[ultimodia])
+meses={"enero":31, "febrero":28, "marzo":31, "abril":30, "mayo":31, "junio":30, "julio":31, "agosto":31, "septiembre":30, "octubre":31, "noviembre":30, "diciembre":31}
+if bisiesto(anio)==True:
+    meses={"enero":31, "febrero":29, "marzo":31, "abril":30, "mayo":31, "junio":30, "julio":31, "agosto":31, "septiembre":30, "octubre":31, "noviembre":30, "diciembre":31}
+    
+#-------------impresion-----------------   
+
+
+
+
+
+
+
     
