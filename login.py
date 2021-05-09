@@ -46,5 +46,8 @@ while salir==0:
             volver_menu=1    
         else: 
             print("la opcion no es valida, vuelva a intentarlo")
+            
+            
+
                 
           
