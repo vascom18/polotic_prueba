@@ -9,3 +9,5 @@ print("Opciones para procesador: i5 i7")
 procesador = input("Procesador favorito: ")
 
 print("La pc que elegiste es: un disco de {}, memoria {} y procesador {}".format(disco,memoria,procesador))
+
+#Este es un comentario
